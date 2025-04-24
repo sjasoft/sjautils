@@ -1,0 +1,12 @@
+#/bin/env python3
+
+from cwutils import radix
+import argparse
+import sys
+
+parser = argparse.ArgumentParser(description='foobar')
+parser.add_argument('-n', '--num', type=int, default=3)
+parser.add_argument('-s', '--sep', default='')
+args = parser.parse_args()
+print(radix.n_words(args.num, args.sep))
+
