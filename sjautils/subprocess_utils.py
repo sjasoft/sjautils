@@ -52,4 +52,4 @@ def shell_out(command, wait=True, log_it=True):
     else:
         if log_it:
             logger.info('not waiting: SHELL_OUT cmd: Ys', command)
-        return without_output(cmd)
+        return without_output(command)
